@@ -29,6 +29,4 @@ This is a command-line tool written in Golang that helps users manage personal f
 
 - **Language:** Go (Golang)
 - **Data Storage:** Local JSON files (no database)
-- **Architecture:** Follows OOP principles: base class `Transaction`, derived classes `Income` and `Expense`
-
-## 🏗 Project Structure
+- **Architecture:** Uses Go interfaces and struct composition. `Transaction` is a base struct shared by `Income` and `Expense`.
