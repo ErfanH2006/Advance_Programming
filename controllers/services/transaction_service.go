@@ -15,7 +15,7 @@ var Incomes []input.Income
 var Expenses []input.Expense
 
 func LoadTransactions() error {
-	// بارگذاری درآمدها و هزینه‌ها از فایل‌ها
+
 	var raw []map[string]interface{}
 	err := storage.LoadJSON(transactionsFile, &raw)
 	if err != nil {
@@ -47,7 +47,6 @@ func LoadTransactions() error {
 }
 
 func SaveTransactions() error {
-	// ذخیره هر دو در یک فایل با نوع تراکنش مشخص
 	var raw []map[string]interface{}
 
 	for _, inc := range Incomes {
@@ -79,7 +78,6 @@ func SaveTransactions() error {
 	return storage.SaveJSON(transactionsFile, raw)
 }
 
-// ثبت درآمد جدید
 func AddIncome(userID string, amount float64, date, desc, source string) (input.Income, error) {
 	inc := input.Income{
 		Transaction: input.Transaction{
@@ -96,7 +94,6 @@ func AddIncome(userID string, amount float64, date, desc, source string) (input.
 	return inc, err
 }
 
-// ثبت هزینه جدید
 func AddExpense(userID string, amount float64, date, desc, category string) (input.Expense, error) {
 	exp := input.Expense{
 		Transaction: input.Transaction{
@@ -113,7 +110,6 @@ func AddExpense(userID string, amount float64, date, desc, category string) (inp
 	return exp, err
 }
 
-// حذف تراکنش بر اساس شناسه
 func DeleteTransaction(id string) error {
 	found := false
 	for i, inc := range Incomes {
@@ -133,12 +129,11 @@ func DeleteTransaction(id string) error {
 		}
 	}
 	if !found {
-		return errors.New("تراکنش یافت نشد")
+		return errors.New("did not find transaction with this ID")
 	}
 	return SaveTransactions()
 }
 
-// مشاهده همه تراکنش‌ها
 func ListAllTransactions() []interface{} {
 	var result []interface{}
 	for _, inc := range Incomes {

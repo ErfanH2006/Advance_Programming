@@ -46,7 +46,6 @@ func HandleUserMenu() {
 			if err != nil {
 				fmt.Println("Error in Add member proces:", err)
 			} else {
-				// اگر اولین کاربر است، فعال می‌کنیم
 				if activeUserID == "" {
 					activeUserID = user.ID
 					services.LoadDefaultCategories(user.ID)
