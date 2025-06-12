@@ -22,7 +22,6 @@ func ShowMainMenu() {
 	fmt.Println("0. Exit")
 }
 
-// خواندن ورودی از کاربر
 func GetUserInput(prompt string) string {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print(prompt)
@@ -229,7 +228,7 @@ func ShowMonthlySummary() {
 	expenses := services.Expenses
 
 	monthSummary := make(map[string]struct {
-		Income float64
+		Income  float64
 		Expense float64
 	})
 
@@ -255,7 +254,7 @@ func ShowMonthlySummary() {
 
 	fmt.Println("📊 Monthly Summary:")
 	for month, s := range monthSummary {
-		fmt.Printf("%s | Income: %.2f | Expense: %.2f | Balance: %.2f\n", month, s.Income, s.Expense, s.Income - s.Expense)
+		fmt.Printf("%s | Income: %.2f | Expense: %.2f | Balance: %.2f\n", month, s.Income, s.Expense, s.Income-s.Expense)
 	}
 }
 

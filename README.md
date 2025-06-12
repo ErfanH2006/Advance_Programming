@@ -32,4 +32,3 @@ This is a command-line tool written in Golang that helps users manage personal f
 - **Architecture:** Follows OOP principles: base class `Transaction`, derived classes `Income` and `Expense`
 
 ## 🏗 Project Structure
-
