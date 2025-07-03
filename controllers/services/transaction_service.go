@@ -9,7 +9,7 @@ import (
 	"github.com/google/uuid"
 )
 
-const transactionsFile = "data/transactions.json"
+const transactionsFile = "data/transaction.json"
 
 var Incomes []input.Income
 var Expenses []input.Expense
@@ -136,11 +136,12 @@ func DeleteTransaction(id string) error {
 
 func ListAllTransactions() []interface{} {
 	var result []interface{}
+	var expresult []interface{}
 	for _, inc := range Incomes {
 		result = append(result, inc)
 	}
 	for _, exp := range Expenses {
-		result = append(result, exp)
+		result = append(expresult, exp)
 	}
 	return result
 }

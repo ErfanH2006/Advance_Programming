@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "amount": 650000,
+    "date": "2025-07-03",
+    "description": "dady gave it to me",
+    "id": "78ec574d-9f91-4b1e-ae4f-f02fef3bf88c",
+    "source": "dad",
+    "type": "income",
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
+  },
+  {
+    "amount": 800000,
+    "date": "2025-06-02",
+    "description": "game was great",
+    "id": "7d9a4f1d-bfb5-4fc3-be57-251171a5bf39",
+    "source": "game",
+    "type": "income",
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
+  },
+  {
+    "amount": 150000,
+    "category": "Food",
+    "date": "2025-07-03",
+    "description": "it worth",
+    "id": "ba578d81-5a65-4b7d-83bd-181b82db9e1c",
+    "type": "expense",
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
+  }
+]

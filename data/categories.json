@@ -1,26 +1,26 @@
 [
   {
     "name": "Food",
-    "user_id": "204db091-d74d-4e5d-9db0-4f0f6cddd4a4"
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
   },
   {
     "name": "Transportation",
-    "user_id": "204db091-d74d-4e5d-9db0-4f0f6cddd4a4"
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
   },
   {
     "name": "Bills",
-    "user_id": "204db091-d74d-4e5d-9db0-4f0f6cddd4a4"
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
   },
   {
     "name": "Shop",
-    "user_id": "204db091-d74d-4e5d-9db0-4f0f6cddd4a4"
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
   },
   {
     "name": "Entertaiment",
-    "user_id": "204db091-d74d-4e5d-9db0-4f0f6cddd4a4"
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
   },
   {
-    "name": "Other",
-    "user_id": "204db091-d74d-4e5d-9db0-4f0f6cddd4a4"
+    "name": "other",
+    "user_id": "dec2165f-7476-415c-b41a-db4a262c773e"
   }
 ]

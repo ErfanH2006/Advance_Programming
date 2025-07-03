@@ -93,7 +93,7 @@ func HandleAddIncome() {
 	source := GetUserInput("source of income: ")
 	date := GetUserInput("Date (YYYY-MM-DD) (it will be for today if you leave it empty): ")
 	if date == "" {
-		date = time.Now().Format("YYYY-MM-DD")
+		date = time.Now().Format("2006-01-02")
 	}
 	desc := GetUserInput("Description: ")
 
@@ -174,7 +174,7 @@ func HandleListTransactions() {
 	}
 	for _, exp := range expenses {
 		if exp.UserID == activeUserID {
-			fmt.Printf("[Income] Amount: %.2f، Source: %s، Date: %s، Description: %s، ID: %s\n",
+			fmt.Printf("[Expense] Amount: %.2f، Source: %s، Date: %s، Description: %s، ID: %s\n",
 				exp.Amount, exp.Category, exp.Date, exp.Description, exp.ID)
 		}
 	}
